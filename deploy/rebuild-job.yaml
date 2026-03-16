@@ -1,0 +1,28 @@
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: two-towers-rebuild
+  namespace: two-towers
+spec:
+  schedule: "15 * * * *"
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          restartPolicy: OnFailure
+          containers:
+            - name: rebuild
+              image: ghcr.io/example/the-two-towers:latest
+              imagePullPolicy: IfNotPresent
+              command: ["python", "-m", "watchtower.tasks", "rebuild"]
+              envFrom:
+                - configMapRef:
+                    name: two-towers-config
+                - secretRef:
+                    name: two-towers-secrets
+              volumeMounts:
+                - name: snapshot
+                  mountPath: /srv/app/snapshot
+          volumes:
+            - name: snapshot
+              emptyDir: {}

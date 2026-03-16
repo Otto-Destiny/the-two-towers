@@ -1,0 +1,45 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "the-two-towers"
+version = "0.1.0"
+description = "Vector-backed short-video recommendation service."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { file = "LICENSE" }
+classifiers = [
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.11",
+]
+dependencies = [
+  "fastapi>=0.104.0",
+  "uvicorn[standard]>=0.24.0",
+  "pydantic>=2.5.0",
+  "numpy>=1.24.0",
+  "qdrant-client>=1.9.0",
+]
+
+[project.optional-dependencies]
+data = [
+  "motor>=3.3.0",
+]
+dev = [
+  "pytest>=7.4.0",
+]
+
+[project.scripts]
+ttt-serve = "watchtower.app:run"
+ttt-maintain = "watchtower.tasks:main"
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["watchtower*"]
+
+[tool.pytest.ini_options]
+testpaths = ["checks"]

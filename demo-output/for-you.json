@@ -1,0 +1,48 @@
+{
+  "status": "ok",
+  "items": [
+    {
+      "clipRef": "clip-3",
+      "makerRef": "maker-1",
+      "topic": "Comedy",
+      "territory": "NG",
+      "clip": {
+        "_id": "clip-3",
+        "UserID": "maker-1",
+        "Category": "Comedy",
+        "Country": "NG",
+        "Language": "en",
+        "Description": "third comedy clip",
+        "createdAt": "2026-03-15T09:30:00+00:00",
+        "Views": 500.0,
+        "Likes": 75.0,
+        "Shares": 4.0,
+        "Comments": 4.0,
+        "Saves": 1.0,
+        "Visibility": "public",
+        "clipRef": "clip-3",
+        "makerRef": "maker-1",
+        "topic": "Comedy",
+        "territory": "NG",
+        "language": "en",
+        "headline": "third comedy clip",
+        "hashtags": []
+      },
+        "scoring": {
+          "affinity": 0.9608333706855774,
+          "topic": 0.7660297969350619,
+          "maker": 0.8268112925211374,
+          "territory": 1.0,
+          "quality": 0.18027888446215143,
+          "freshness": 0.3221828016661839,
+          "exploration": 0.0003562232952747855,
+          "blend": 0.6587466559975532,
+          "diversity_penalty": 0.0,
+          "final": 0.6587466559975532
+        }
+      }
+    ],
+    "continuationMark": "eyJsYW5lIjoiZm9yLXlvdSIsInBhZ2UiOjEsInNlZW5fcmVmcyI6WyJjbGlwLTMiXX0=",
+    "more": false,
+  "traceRef": "for_you-cf7b2e98924e"
+}

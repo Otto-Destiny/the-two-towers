@@ -1,0 +1,18 @@
+{
+  "status": "ok",
+  "checkedAt": "2026-03-16T05:53:14.880107+00:00",
+  "engine": {
+    "built_at": "2026-03-16T05:53:14.860911+00:00",
+    "clip_count": 3,
+    "vector": {
+      "mode": "memory",
+      "healthy": true,
+      "degraded": false,
+      "collection": "ttt-clips",
+      "dimension": 28,
+      "indexed_clips": 3,
+      "endpoint": "",
+      "last_error": ""
+    }
+  }
+}
