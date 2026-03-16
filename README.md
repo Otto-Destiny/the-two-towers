@@ -1,3 +1,17 @@
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3.11-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python 3.11" />
+  <img src="https://img.shields.io/badge/FastAPI-API-009688?style=for-the-badge&logo=fastapi&logoColor=white" alt="FastAPI" />
+  <img src="https://img.shields.io/badge/Qdrant-Vector%20DB-DC244C?style=for-the-badge&logo=qdrant&logoColor=white" alt="Qdrant" />
+  <img src="https://img.shields.io/badge/MongoDB-Data-47A248?style=for-the-badge&logo=mongodb&logoColor=white" alt="MongoDB" />
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Docker-Containers-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker" />
+  <img src="https://img.shields.io/badge/Kubernetes-Deploy-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white" alt="Kubernetes" />
+  <img src="https://img.shields.io/badge/Pytest-Checks-0A9EDC?style=for-the-badge&logo=pytest&logoColor=white" alt="Pytest" />
+  <img src="https://img.shields.io/badge/License-MIT-black?style=for-the-badge" alt="MIT License" />
+</p>
+
 # the-two-towers
 
 `the-two-towers` is a vector-backed recommendation service for short-form video feeds. It exposes a small HTTP API for feed generation and engagement capture, uses Qdrant for ANN retrieval, and applies a transparent ranking pass that blends viewer affinity, engagement priors, freshness, and diversity control. The project is inspired by the retrieval and ranking ideas behind TikTok-style recommendation systems, and by *The Two Towers* from *The Lord of the Rings* movie, the towers of Sauron and Saruman; hence the name. This is my own small implementation of the well known industry two-tower recommendation engine.
